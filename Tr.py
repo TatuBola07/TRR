@@ -14,7 +14,9 @@ print("Please Wait...")
 a = 1
 while True:
 
-    priv_key = PrivateKey.range(2,10)
+    P = 1
+    V = 100
+    priv_key = list(range(P,V))
     xbase = priv_key.public_key.to_base58check_address()
     xHex = priv_key.public_key.to_hex_address()
     Prix = priv_key.hex()

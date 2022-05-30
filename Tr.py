@@ -14,9 +14,9 @@ print("Please Wait...")
 a = 1
 while True:
 
-    P = 1
-    V = 100
-    priv_key = list(range(P,V))
+    high = 0x00000000000000000000000000000000000000000000000000000000000186A0
+    low = 0x0000000000000000000000000000000000000000000000000000000000000001
+    priv_key = PrivateKey.randrange (low, high)
     xbase = priv_key.public_key.to_base58check_address()
     xHex = priv_key.public_key.to_hex_address()
     Prix = priv_key.hex()

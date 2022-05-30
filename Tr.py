@@ -14,5 +14,6 @@ print("Please Wait...")
 a = 1
 while True:
 
-    priv_key = PrivateKey.random(1,100,75)
+    priv_key = PrivateKey.sequence( 1 ,100 )
+        
     print(priv_key)   

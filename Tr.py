@@ -5,15 +5,24 @@ from Crypto.Hash import keccak
 from tronpy.keys import PrivateKey
 import colorama
 from colorama import Fore, Back, Style
-
+from bitcoinaddress import Wallet
 colorama.init()
 
 
 print("Please Wait...")
 
 a = 1
-while True:
-
-    priv_key = PrivateKey.sequence( 1 ,100 )
-        
-    print(priv_key)   
+b = 2
+c = 100
+count=0
+remaining=c-b
+F = []
+P = b
+while P<c:
+    count+=1
+    remaining-=m
+    P+=m
+    ran= P
+    HEX = "%064x" % ran
+    priv_key = PrivateKey(HEX)
+    print(priv_key)

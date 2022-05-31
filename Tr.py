@@ -19,9 +19,7 @@ remaining=c-b
 F = []
 P = b
 while P<c:
-    count+=1
-    remaining-=m
-    P+=m
+    count+= 1
     ran= P
     HEX = "%064x" % ran
     priv_key = PrivateKey(HEX)

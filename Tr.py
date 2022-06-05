@@ -21,8 +21,8 @@ def HASH160(pubk_bytes):
 	return hashlib.new('ripemd160', hashlib.sha256(pubk_bytes).digest()).digest()
 
 
-x = 1
-y = 1000
+x = 10000
+y = 11000
 F = []
 P = x
 

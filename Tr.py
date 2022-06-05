@@ -22,7 +22,7 @@ def HASH160(pubk_bytes):
 
 
 x = 1
-y = 10000
+y = 1000
 F = []
 P = x
 
